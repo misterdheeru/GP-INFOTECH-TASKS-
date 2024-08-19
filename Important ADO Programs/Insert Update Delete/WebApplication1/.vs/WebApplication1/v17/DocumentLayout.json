@@ -1,0 +1,65 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PROGRAMMING\\GP INFOTECH\\Important ADO Programs\\Insert Update Delete\\WebApplication1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F1EEE904-0B67-43E1-A4FF-C53396A1D8A9}|WebApplication1\\WebApplication1.csproj|d:\\programming\\gp infotech\\important ado programs\\insert update delete\\webapplication1\\webapplication1\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1EEE904-0B67-43E1-A4FF-C53396A1D8A9}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1EEE904-0B67-43E1-A4FF-C53396A1D8A9}|WebApplication1\\WebApplication1.csproj|D:\\PROGRAMMING\\GP INFOTECH\\Important ADO Programs\\Insert Update Delete\\WebApplication1\\webapplication1\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F1EEE904-0B67-43E1-A4FF-C53396A1D8A9}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WebForm1.aspx",
+              "DocumentMoniker": "D:\\PROGRAMMING\\GP INFOTECH\\Important ADO Programs\\Insert Update Delete\\WebApplication1\\WebApplication1\\WebForm1.aspx",
+              "RelativeDocumentMoniker": "WebApplication1\\WebForm1.aspx",
+              "ToolTip": "D:\\PROGRAMMING\\GP INFOTECH\\Important ADO Programs\\Insert Update Delete\\WebApplication1\\WebApplication1\\WebForm1.aspx*",
+              "RelativeToolTip": "WebApplication1\\WebForm1.aspx*",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-08-17T18:16:28.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WebForm1.aspx.cs",
+              "DocumentMoniker": "D:\\PROGRAMMING\\GP INFOTECH\\Important ADO Programs\\Insert Update Delete\\WebApplication1\\WebApplication1\\WebForm1.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\WebForm1.aspx.cs",
+              "ToolTip": "D:\\PROGRAMMING\\GP INFOTECH\\Important ADO Programs\\Insert Update Delete\\WebApplication1\\WebApplication1\\WebForm1.aspx.cs",
+              "RelativeToolTip": "WebApplication1\\WebForm1.aspx.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAswE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T18:16:28.757Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

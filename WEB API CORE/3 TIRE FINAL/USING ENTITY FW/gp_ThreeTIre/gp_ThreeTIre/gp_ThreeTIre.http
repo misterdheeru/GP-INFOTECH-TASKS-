@@ -1,0 +1,6 @@
+@gp_ThreeTIre_HostAddress = http://localhost:5241
+
+GET {{gp_ThreeTIre_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

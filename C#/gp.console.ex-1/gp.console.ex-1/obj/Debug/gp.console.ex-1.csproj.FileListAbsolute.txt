@@ -1,0 +1,6 @@
+D:\PROGRAMMING\GP INFOTECH\C#\gp.console.ex-1\gp.console.ex-1\bin\Debug\gp.console.ex-1.exe.config
+D:\PROGRAMMING\GP INFOTECH\C#\gp.console.ex-1\gp.console.ex-1\bin\Debug\gp.console.ex-1.exe
+D:\PROGRAMMING\GP INFOTECH\C#\gp.console.ex-1\gp.console.ex-1\bin\Debug\gp.console.ex-1.pdb
+D:\PROGRAMMING\GP INFOTECH\C#\gp.console.ex-1\gp.console.ex-1\obj\Debug\gp.console.ex-1.csprojResolveAssemblyReference.cache
+D:\PROGRAMMING\GP INFOTECH\C#\gp.console.ex-1\gp.console.ex-1\obj\Debug\gp.console.ex-1.exe
+D:\PROGRAMMING\GP INFOTECH\C#\gp.console.ex-1\gp.console.ex-1\obj\Debug\gp.console.ex-1.pdb
