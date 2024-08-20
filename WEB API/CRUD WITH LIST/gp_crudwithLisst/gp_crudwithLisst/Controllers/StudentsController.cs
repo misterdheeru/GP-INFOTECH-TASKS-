@@ -58,9 +58,9 @@ namespace gp_crudwithList.Controllers
         // POST: api/Students - Create a new student
 
         [HttpPost]
-        public IHttpActionResult CreateStudent([FromBody] Student newStudent)
+        public IHttpActionResult CreateStudent(Student newStudent)
         {
-            if (newStudent == null || !ModelState.IsValid)
+            if (newStudent == null)
             {
                 return BadRequest("Invalid data.");
             }
@@ -73,9 +73,9 @@ namespace gp_crudwithList.Controllers
         // PUT: api/Students/1 - Update an existing student
 
         [HttpPut]
-        public IHttpActionResult UpdateStudent(int id, [FromBody] Student updatedStudent)
+        public IHttpActionResult UpdateStudent(int id, Student updatedStudent)
         {
-            if (updatedStudent == null || !ModelState.IsValid)
+            if (updatedStudent == null)
             {
                 return BadRequest("Invalid data.");
             }

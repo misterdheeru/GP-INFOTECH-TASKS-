@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace gp_crudwithLisst
 {
@@ -12,6 +13,10 @@ namespace gp_crudwithLisst
             // Web API configuration and services
 
             // Web API routes
+
+            var cors = new EnableCorsAttribute("*", "*", "*"); // To Enable  Install-Package Microsoft.AspNet.WebApi.Cors
+            config.EnableCors(cors);
+
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
