@@ -1,119 +1,106 @@
-﻿using System;
+﻿using gp_crudwithLisst.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
 namespace gp_crudwithList.Controllers
 {
-    // Student class definition
-    public class Student
-    {
-        public int ID { get; set; }
-        public string FNAME { get; set; }
-        public string SNAME { get; set; }
-        public string EMAIL { get; set; }
-        public byte AGE { get; set; }
-        public string MOBILE { get; set; }
-        public string COUNTRY { get; set; }
-        public string STATE { get; set; }
-        public string CITY { get; set; }
-        public string UNIVERSITY { get; set; }
-        public string COLLEGE { get; set; }
-        public string PROGRAM { get; set; }
-        public string YEAR { get; set; }
 
-        // Sample static list of students
-        public static List<Student> stdList = new List<Student>
-        {
-            new Student {ID = 1, FNAME = "RAMA", SNAME = "KRISHNA", EMAIL = "ramakrishna@gmail.com", AGE = 25, MOBILE = "9845878548", COUNTRY = "INDIA", STATE = "TELANGANA", CITY = "HYDERABAD", UNIVERSITY = "OU", COLLEGE = "SIDDHARTHA DEGREE CLG", PROGRAM = "BCA", YEAR = "2023" },
-            new Student {ID = 2, FNAME = "ROHITH", SNAME = "CHOWDARY", EMAIL = "rohith@gmail.com", AGE = 25, MOBILE = "9845878549", COUNTRY = "INDIA", STATE = "TELANGANA", CITY = "HYDERABAD", UNIVERSITY = "OU", COLLEGE = "SIDDHARTHA DEGREE CLG", PROGRAM = "BCA", YEAR = "2023" },
-            new Student {ID = 3, FNAME = "SAI", SNAME = "KRISHNA", EMAIL = "saikrishna@gmail.com", AGE = 25, MOBILE = "9845878550", COUNTRY = "INDIA", STATE = "TELANGANA", CITY = "HYDERABAD", UNIVERSITY = "OU", COLLEGE = "SIDDHARTHA DEGREE CLG", PROGRAM = "BCA", YEAR = "2023" }
-        };
-    }
-
-    // API controller with CRUD operations
     public class StudentsController : ApiController
     {
-        // GET: api/Students - Retrieve all students
+
+        Students objstd = new Students();
+
+        [Route("api/Students")]
         [HttpGet]
-        public IHttpActionResult GetAllStudentRecords()
+        public IHttpActionResult DisplayAllStudents()
         {
-            return Ok(Student.stdList);
+            var res = this.objstd.GetAllStudentsList();
+
+            return Ok(res);
         }
 
-        // GET: api/Students/1 - Retrieve a single student by ID
-
-        [HttpGet]
-
-        public IHttpActionResult GetStudentById(int id)
-        {
-            var student = Student.stdList.FirstOrDefault(s => s.ID == id);
-            if (student == null)
-            {
-                return NotFound();
-            }
-            return Ok(student);
-        }
-
-        // POST: api/Students - Create a new student
-
+        [Route("api/Students")]
         [HttpPost]
-        public IHttpActionResult CreateStudent(Student newStudent)
+        public IHttpActionResult StudentsAdd(Students obj)
         {
-            if (newStudent == null)
-            {
-                return BadRequest("Invalid data.");
-            }
-
-            newStudent.ID = Student.stdList.Count > 0 ? Student.stdList.Max(s => s.ID) + 1 : 1;
-            Student.stdList.Add(newStudent);
-            return Ok(newStudent);
-        }
-
-        // PUT: api/Students/1 - Update an existing student
-
-        [HttpPut]
-        public IHttpActionResult UpdateStudent(int id, Student updatedStudent)
-        {
-            if (updatedStudent == null)
-            {
-                return BadRequest("Invalid data.");
-            }
-
-            var existingStudent = Student.stdList.FirstOrDefault(s => s.ID == id);
-            if (existingStudent == null)
+            if (obj == null)
             {
                 return NotFound();
             }
+            else
+            {
+                objstd.AddStudents(obj);
+                return Ok("RECOR IS INSERTED");
+            }
 
-            existingStudent.FNAME = updatedStudent.FNAME;
-            existingStudent.SNAME = updatedStudent.SNAME;
-            existingStudent.EMAIL = updatedStudent.EMAIL;
-            existingStudent.AGE = updatedStudent.AGE;
-            existingStudent.MOBILE = updatedStudent.MOBILE;
-            existingStudent.COUNTRY = updatedStudent.COUNTRY;
-            existingStudent.STATE = updatedStudent.STATE;
-            existingStudent.CITY = updatedStudent.CITY;
-            existingStudent.UNIVERSITY = updatedStudent.UNIVERSITY;
-            existingStudent.COLLEGE = updatedStudent.COLLEGE;
-            existingStudent.PROGRAM = updatedStudent.PROGRAM;
-            existingStudent.YEAR = updatedStudent.YEAR;
+        }
+        [Route("api/Students/{ID}")]
+        [HttpGet]
+        public IHttpActionResult SingleStudent(string ID)
+        {
+            var res = Students.stdobj.FirstOrDefault(s => s.ID == ID);
 
-            return Ok(existingStudent);
+            if (res == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return Ok(res);
+            }
         }
 
-        // DELETE: api/Students/1 - Delete a student by ID
+        [Route("api/Students/{ID}")]
         [HttpDelete]
-        public IHttpActionResult DeleteStudent(int id)
+        public IHttpActionResult DeleteStudent(string ID)
         {
-            var student = Student.stdList.FirstOrDefault(s => s.ID == id);
-            if (student == null)
+            var res = Students.stdobj.FirstOrDefault(s => s.ID == ID);
+
+            if (res == null)
+            {
+                string message = "STUDENT RECORD WAS NOT FOUND " + ID;
+                return NotFound();
+            }
+            else
+            {
+                Students.stdobj.Remove(res);
+                return Ok("RECORD IS DELETED");
+            }
+
+        }
+
+        [Route("api/Students/{ID}")]
+        [HttpPut]
+        public IHttpActionResult UpdateStudents(string ID, Students OBJ)
+        {
+
+            var res = Students.stdobj.FirstOrDefault(s => s.ID == ID);
+
+            if (res == null)
             {
                 return NotFound();
             }
+            else
+            {
+                res.FNAME = OBJ.FNAME;
+                res.SNAME = OBJ.SNAME;
+                res.AGE = OBJ.AGE;
+                res.MOBILE = OBJ.MOBILE;
+                res.EMAIL = OBJ.EMAIL;
+                res.COUNTRY = OBJ.COUNTRY;
+                res.STATE = OBJ.STATE;
+                res.CITY = OBJ.CITY;
+                res.UNIVERSITY = OBJ.UNIVERSITY;
+                res.COLLEGE = OBJ.COLLEGE;
+                res.PROGRAM = OBJ.PROGRAM;
+                res.YEAR = OBJ.YEAR;
 
-            Student.stdList.Remove(student);
-            return Ok($"Student with ID {id} has been deleted.");
+                return Ok(res);
+            }
+
         }
+
     }
 }
