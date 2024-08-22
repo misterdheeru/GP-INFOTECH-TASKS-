@@ -61,14 +61,12 @@ namespace gp_crudwithLisst
             name: "clgdegree",
             routeTemplate: "api/DropDowns/Colleges/Degree"
 
-
            );
 
             config.Routes.MapHttpRoute(
 
                  name: "university",
                  routeTemplate: "api/DropDowns/university"
-
 
                 );
 
@@ -77,7 +75,6 @@ namespace gp_crudwithLisst
 
                    name: "CityTwo",
                    routeTemplate: "api/DropDowns/City/Two"
-
 
                   );
 
@@ -94,14 +91,12 @@ namespace gp_crudwithLisst
                        name: "States",
                        routeTemplate: "api/DropDowns/States"
 
-
                      );
 
             config.Routes.MapHttpRoute(
 
                 name: "Countrys",
                 routeTemplate: "api/DropDowns/Countrys"
-
    
               );
 

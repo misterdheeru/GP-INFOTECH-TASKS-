@@ -34,7 +34,6 @@ namespace gp_crudwithList.Controllers
                 objstd.AddStudents(obj);
                 return Ok("RECOR IS INSERTED");
             }
-
         }
         [Route("api/Students/{ID}")]
         [HttpGet]
