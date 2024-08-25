@@ -1,0 +1,6 @@
+D:\PROGRAMMING\GP INFOTECH\WEB API\THREE TIRE\gp_studentcrudusingadowebapi\gp_DALL\bin\Debug\gp_DALL.dll
+D:\PROGRAMMING\GP INFOTECH\WEB API\THREE TIRE\gp_studentcrudusingadowebapi\gp_DALL\bin\Debug\gp_DALL.pdb
+D:\PROGRAMMING\GP INFOTECH\WEB API\THREE TIRE\gp_studentcrudusingadowebapi\gp_DALL\obj\Debug\gp_DALL.csproj.AssemblyReference.cache
+D:\PROGRAMMING\GP INFOTECH\WEB API\THREE TIRE\gp_studentcrudusingadowebapi\gp_DALL\obj\Debug\gp_DALL.csproj.CoreCompileInputs.cache
+D:\PROGRAMMING\GP INFOTECH\WEB API\THREE TIRE\gp_studentcrudusingadowebapi\gp_DALL\obj\Debug\gp_DALL.dll
+D:\PROGRAMMING\GP INFOTECH\WEB API\THREE TIRE\gp_studentcrudusingadowebapi\gp_DALL\obj\Debug\gp_DALL.pdb

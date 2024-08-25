@@ -1,0 +1,49 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PROGRAMMING\\GP INFOTECH\\C#\\gp_studentcrudwitstoreproc\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D3C17C68-9E73-47FA-AA90-67D4465A34FB}|gp_studentcrudwitstoreproc\\gp_studentcrudwitstoreproc.csproj|d:\\programming\\gp infotech\\c#\\gp_studentcrudwitstoreproc\\gp_studentcrudwitstoreproc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3C17C68-9E73-47FA-AA90-67D4465A34FB}|gp_studentcrudwitstoreproc\\gp_studentcrudwitstoreproc.csproj|solutionrelative:gp_studentcrudwitstoreproc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PROGRAMMING\\GP INFOTECH\\C#\\gp_studentcrudwitstoreproc\\gp_studentcrudwitstoreproc\\Program.cs",
+              "RelativeDocumentMoniker": "gp_studentcrudwitstoreproc\\Program.cs",
+              "ToolTip": "D:\\PROGRAMMING\\GP INFOTECH\\C#\\gp_studentcrudwitstoreproc\\gp_studentcrudwitstoreproc\\Program.cs",
+              "RelativeToolTip": "gp_studentcrudwitstoreproc\\Program.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAiwBIAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T14:18:41.162Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

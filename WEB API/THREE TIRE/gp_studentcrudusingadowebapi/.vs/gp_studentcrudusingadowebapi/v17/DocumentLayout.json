@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\THREE TIRE\\gp_studentcrudusingadowebapi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F4E9C912-9E8B-4CB8-80A5-4E7540797AF8}|gp_DALL\\gp_DALL.csproj|d:\\programming\\gp infotech\\web api\\three tire\\gp_studentcrudusingadowebapi\\gp_dall\\studentsrepository\\studentsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4E9C912-9E8B-4CB8-80A5-4E7540797AF8}|gp_DALL\\gp_DALL.csproj|solutionrelative:gp_dall\\studentsrepository\\studentsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{357AEE4A-D191-4AC1-9D4E-332802FBCB68}|gp_BALL\\gp_BALL.csproj|D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\THREE TIRE\\gp_studentcrudusingadowebapi\\gp_ball\\crudservices\\studentsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{357AEE4A-D191-4AC1-9D4E-332802FBCB68}|gp_BALL\\gp_BALL.csproj|solutionrelative:gp_ball\\crudservices\\studentsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4E9C912-9E8B-4CB8-80A5-4E7540797AF8}|gp_DALL\\gp_DALL.csproj|D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\THREE TIRE\\gp_studentcrudusingadowebapi\\gp_dall\\models\\students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4E9C912-9E8B-4CB8-80A5-4E7540797AF8}|gp_DALL\\gp_DALL.csproj|solutionrelative:gp_dall\\models\\students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{418E4DD6-A711-49BB-B0AE-8A16F39AD1FB}|gp_studentcrudusingadowebapi\\gp_studentcrudusingadowebapi.csproj|D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\THREE TIRE\\gp_studentcrudusingadowebapi\\gp_studentcrudusingadowebapi\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{418E4DD6-A711-49BB-B0AE-8A16F39AD1FB}|gp_studentcrudusingadowebapi\\gp_studentcrudusingadowebapi.csproj|solutionrelative:gp_studentcrudusingadowebapi\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "studentsRepo.cs",
+              "DocumentMoniker": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\THREE TIRE\\gp_studentcrudusingadowebapi\\gp_DALL\\StudentsRepository\\studentsRepo.cs",
+              "RelativeDocumentMoniker": "gp_DALL\\StudentsRepository\\studentsRepo.cs",
+              "ToolTip": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\THREE TIRE\\gp_studentcrudusingadowebapi\\gp_DALL\\StudentsRepository\\studentsRepo.cs",
+              "RelativeToolTip": "gp_DALL\\StudentsRepository\\studentsRepo.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAmwCwAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T13:42:03.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentsServices.cs",
+              "DocumentMoniker": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\THREE TIRE\\gp_studentcrudusingadowebapi\\gp_BALL\\crudServices\\StudentsServices.cs",
+              "RelativeDocumentMoniker": "gp_BALL\\crudServices\\StudentsServices.cs",
+              "ToolTip": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\THREE TIRE\\gp_studentcrudusingadowebapi\\gp_BALL\\crudServices\\StudentsServices.cs",
+              "RelativeToolTip": "gp_BALL\\crudServices\\StudentsServices.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAUwBkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T10:57:24.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\THREE TIRE\\gp_studentcrudusingadowebapi\\gp_studentcrudusingadowebapi\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "gp_studentcrudusingadowebapi\\Controllers\\StudentsController.cs",
+              "ToolTip": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\THREE TIRE\\gp_studentcrudusingadowebapi\\gp_studentcrudusingadowebapi\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "gp_studentcrudusingadowebapi\\Controllers\\StudentsController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAcwB0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T10:33:57.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Students.cs",
+              "DocumentMoniker": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\THREE TIRE\\gp_studentcrudusingadowebapi\\gp_DALL\\Models\\Students.cs",
+              "RelativeDocumentMoniker": "gp_DALL\\Models\\Students.cs",
+              "ToolTip": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\THREE TIRE\\gp_studentcrudusingadowebapi\\gp_DALL\\Models\\Students.cs",
+              "RelativeToolTip": "gp_DALL\\Models\\Students.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAUwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T10:23:44.228Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

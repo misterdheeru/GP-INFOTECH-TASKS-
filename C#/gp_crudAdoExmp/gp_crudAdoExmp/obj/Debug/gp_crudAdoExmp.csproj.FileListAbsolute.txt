@@ -1,0 +1,7 @@
+D:\PROGRAMMING\GP INFOTECH\C#\gp_crudAdoExmp\gp_crudAdoExmp\bin\Debug\gp_crudAdoExmp.exe.config
+D:\PROGRAMMING\GP INFOTECH\C#\gp_crudAdoExmp\gp_crudAdoExmp\bin\Debug\gp_crudAdoExmp.exe
+D:\PROGRAMMING\GP INFOTECH\C#\gp_crudAdoExmp\gp_crudAdoExmp\bin\Debug\gp_crudAdoExmp.pdb
+D:\PROGRAMMING\GP INFOTECH\C#\gp_crudAdoExmp\gp_crudAdoExmp\obj\Debug\gp_crudAdoExmp.csproj.AssemblyReference.cache
+D:\PROGRAMMING\GP INFOTECH\C#\gp_crudAdoExmp\gp_crudAdoExmp\obj\Debug\gp_crudAdoExmp.csproj.CoreCompileInputs.cache
+D:\PROGRAMMING\GP INFOTECH\C#\gp_crudAdoExmp\gp_crudAdoExmp\obj\Debug\gp_crudAdoExmp.exe
+D:\PROGRAMMING\GP INFOTECH\C#\gp_crudAdoExmp\gp_crudAdoExmp\obj\Debug\gp_crudAdoExmp.pdb
