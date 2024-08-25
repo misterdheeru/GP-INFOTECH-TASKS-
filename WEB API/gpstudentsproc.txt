@@ -1,0 +1,42 @@
+CREATE PROCEDURE gp_studentcrud
+    @Action VARCHAR(10),
+    @gp_ID INT = NULL,
+    @gp_FIRSTNAME VARCHAR(255) = NULL,
+    @gp_SURNAME VARCHAR(255) = NULL,
+    @gp_AGE INT = NULL,
+    @gp_MOBILE VARCHAR(255) = NULL,
+    @gp_EMAIL VARCHAR(255) = NULL,
+    @gp_COUNTRY VARCHAR(255) = NULL,
+    @gp_STATE VARCHAR(255) = NULL,
+    @gp_UNIVERSITY VARCHAR(255) = NULL,
+    @gp_COLLEGE VARCHAR(255) = NULL,
+    @gp_PROGRAM VARCHAR(255) = NULL,
+    @gp_YEAR VARCHAR(255) = NULL,
+	@gp_CITY VARCHAR(255) = NULL
+AS
+BEGIN
+    IF @Action = 'SELECT_ALL'
+    BEGIN
+        SELECT * FROM Students;
+    END
+    ELSE IF @Action = 'SELECT_SINGLE_STUDENT'
+    BEGIN
+        SELECT * FROM Students WHERE gp_ID = @gp_ID;
+    END
+    ELSE IF @Action = 'INSERT'
+    BEGIN
+        INSERT INTO Students (gp_ID, gp_FIRSTNAME, gp_SURNAME, gp_AGE, gp_MOBILE, gp_EMAIL, gp_COUNTRY, gp_STATE, gp_UNIVERSITY, gp_COLLEGE, gp_PROGRAM, gp_YEAR , gp_CITY)
+        VALUES (@gp_ID, @gp_FIRSTNAME, @gp_SURNAME, @gp_AGE, @gp_MOBILE, @gp_EMAIL, @gp_COUNTRY, @gp_STATE, @gp_UNIVERSITY, @gp_COLLEGE, @gp_PROGRAM, @gp_YEAR , @gp_CITY);
+    END
+    ELSE IF @Action = 'DELETE'
+    BEGIN
+        DELETE FROM Students WHERE gp_ID = @gp_ID;
+    END
+    ELSE IF @Action = 'UPDATE'
+    BEGIN
+        UPDATE Students
+        SET gp_FIRSTNAME = @gp_FIRSTNAME, gp_SURNAME = @gp_SURNAME, gp_AGE = @gp_AGE, gp_MOBILE = @gp_MOBILE, gp_EMAIL = @gp_EMAIL, gp_COUNTRY = @gp_COUNTRY, gp_STATE = @gp_STATE, gp_UNIVERSITY = @gp_UNIVERSITY, gp_COLLEGE = @gp_COLLEGE, gp_PROGRAM = @gp_PROGRAM, gp_YEAR = @gp_YEAR,gp_CITY = @gp_CITY
+        WHERE gp_ID = @gp_ID;
+    END
+END;
+GO
