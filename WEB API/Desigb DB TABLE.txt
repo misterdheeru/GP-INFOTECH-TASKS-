@@ -160,6 +160,127 @@ CREATE TABLE cities(
 DATA BASE TABLE FINAL CRUD
 ==============
 
+===================
+ CREATE  PROCEDURE  FinalStudentCrud
+    @Action VARCHAR(10), -- 'INSERT', 'UPDATE', 'DELETE', 'SELECT_ALL', 'SELECT_SINGLE'
+    @ID INT = NULL,
+    @FNAME VARCHAR(255) = NULL,
+    @SNAME VARCHAR(255) = NULL,
+    @AGE INT = NULL,
+    @YEAR VARCHAR(255) = NULL,
+    @EMAIL VARCHAR(255) = NULL,
+    @MOBILE VARCHAR(255) = NULL,
+    @ADDRESS VARCHAR(255) = NULL,
+    @ISACTIVE BIT = NULL, -- Now set as BIT (Boolean)
+    @CREATEDBY VARCHAR(255) = NULL,
+    @CREATEDON DATETIME = NULL,
+    @UPDATEDBY VARCHAR(255) = NULL,
+    @UPDATEDON DATETIME = NULL,
+    @COUNTRY_ID INT = NULL,
+    @STATE_ID INT = NULL,
+    @CITI_ID INT = NULL,
+	@UNI_ID INT =NULL,
+	@CLG_ID INT = NULL,
+	@PROG_ID INT =NULL
+AS
+BEGIN
+    IF @Action = 'SELECT_ALL'
+    BEGIN
+        SELECT 
+            s.ID, s.FNAME, s.SNAME, s.AGE, s.YEAR, s.EMAIL, s.MOBILE, 
+            s.ADDRESS, s.ISACTIVE, s.CREATEDBY, s.CREATEDON, s.UPDATEDON,s.UPDATEDBY,
+            c.COUNTRY_NAME, st.STATE_NAME, ct.CITY_NAME ,univ.UNI_NAME ,clg.CLG_NAME ,
+			uniprog.UNIP_NAME, prog.PROG_NAME
+        FROM 
+            gp_students s
+        INNER JOIN 
+            gp_countrys c ON s.COUNTRY_ID = c.COUNTRY_ID
+        INNER JOIN 
+            gp_states st ON s.STATE_ID = st.STATE_ID
+        INNER JOIN 
+            gp_cities ct ON s.CITI_ID = ct.CITI_ID
+	    INNER JOIN 
+            gp_universities  univ ON s.UNI_ID = univ.UNI_ID
+	   INNER JOIN 
+            gp_college  clg ON s.CLG_ID = clg.CLG_ID
+	   INNER JOIN 
+            gp_universitiesprograms  uniprog ON s.UNI_ID =  uniprog.UNIP_ID
+	   INNER JOIN 
+            gp_programs  prog ON s.PROG_ID =  prog.PROG_ID
+    END
+    ELSE IF @Action = 'SINGLE'
+    BEGIN
+        SELECT 
+            s.ID, s.FNAME, s.SNAME, s.AGE, s.YEAR, s.EMAIL, s.MOBILE, 
+            s.ADDRESS, s.ISACTIVE, s.CREATEDBY, s.CREATEDON, s.UPDATEDON,s.UPDATEDBY,
+            c.COUNTRY_NAME, st.STATE_NAME, ct.CITY_NAME ,univ.UNI_NAME ,clg.CLG_NAME ,
+			uniprog.UNIP_NAME, prog.PROG_NAME
+        FROM 
+         gp_students s
+        INNER JOIN 
+            gp_countrys c ON s.COUNTRY_ID = c.COUNTRY_ID
+        INNER JOIN 
+            gp_states st ON s.STATE_ID = st.STATE_ID
+        INNER JOIN 
+            gp_cities ct ON s.CITI_ID = ct.CITI_ID
+	    INNER JOIN 
+            gp_universities  univ ON s.UNI_ID = univ.UNI_ID
+	   INNER JOIN 
+            gp_college  clg ON s.CLG_ID = clg.CLG_ID
+	   INNER JOIN 
+            gp_universitiesprograms  uniprog ON s.UNI_ID =  uniprog.UNIP_ID
+	   INNER JOIN 
+            gp_programs  prog ON s.PROG_ID =  prog.PROG_ID
+        WHERE 
+            s.ID = @ID
+    END
+    ELSE IF @Action = 'INSERT'
+    BEGIN 
+        INSERT INTO gp_students 
+            (ID,FNAME, SNAME, AGE, YEAR, EMAIL, MOBILE, ADDRESS, ISACTIVE, 
+             CREATEDBY, CREATEDON, UPDATEDBY, UPDATEDON, COUNTRY_ID, STATE_ID, CITI_ID,UNI_ID,CLG_ID,PROG_ID) 
+        VALUES
+            (@ID,@FNAME, @SNAME, @AGE, @YEAR, @EMAIL, @MOBILE, @ADDRESS, @ISACTIVE, 
+             @CREATEDBY, @CREATEDON, @UPDATEDBY, @UPDATEDON, @COUNTRY_ID, @STATE_ID, @CITI_ID,@UNI_ID,@CLG_ID,@PROG_ID)
+    END
+    ELSE IF @Action = 'DELETE'
+    BEGIN
+        DELETE FROM gp_students WHERE ID = @ID
+    END
+    ELSE IF @Action = 'UPDATE'
+    BEGIN
+        UPDATE gp_students 
+        SET 
+            FNAME = @FNAME, 
+            SNAME = @SNAME, 
+            AGE = @AGE, 
+            YEAR = @YEAR, 
+            EMAIL = @EMAIL, 
+            MOBILE = @MOBILE, 
+            ADDRESS = @ADDRESS, 
+            ISACTIVE = @ISACTIVE, 
+            CREATEDBY = @CREATEDBY, 
+            CREATEDON = @CREATEDON, 
+            UPDATEDBY = @UPDATEDBY, 
+            UPDATEDON = @UPDATEDON, 
+            COUNTRY_ID = @COUNTRY_ID, 
+            STATE_ID = @STATE_ID, 
+            CITI_ID = @CITI_ID,
+			UNI_ID	=@UNI_ID ,
+	        CLG_ID  =  @CLG_ID ,
+	        PROG_ID =@PROG_ID
+        WHERE 
+            ID = @ID 
+    END
+END;
+
+
+
+===================
+
+
+
+
 SELECT *FROM gp_students 
 SELECT *FROM gp_countrys 
 SELECT *FROM gp_states

@@ -19,6 +19,7 @@ namespace gp_DALL.Models
         public int COUNTRY_ID { set; get; }
         public int STATE_ID { set; get; }
         public int CITI_ID { set; get; }
+ 
 
     }
 }
