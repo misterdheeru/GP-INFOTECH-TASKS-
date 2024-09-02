@@ -42,33 +42,21 @@ export class StudentsComponent implements OnInit  {
         res.country.map((res:any)=>{
           this.Country.push(res)
         })
-           
-       
-       
-
       })
-  
- 
-  
-      
-
   }
   gp_countryChanges(val:any)
   {
-   
-    
        this.States = [];
        this.arraybrop.ArrayDropDownList.filter((res:any)=>{
          res.states.filter((res:any)=>{
            if(res.REFID==val.target.value)
            {
-             this.States.push(res)
+            this.myForm.patchValue({ STATE: '' }); // Reset the STATE field when country changes
+            this.States.push(res);
            }
          })
        })
-     
-     
-  }
+   }
  
 
   Show()
