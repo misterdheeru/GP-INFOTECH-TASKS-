@@ -10,9 +10,10 @@ namespace gp_DALL.Repository
     {
 
         string cs = "server=.;database=gp_webapi;uid=sa;pwd=123";
-        public List<GetAllStd> GetAllSutents()
+     
+        public List<GETALL> GetAllSutents()
         {
-            List<GetAllStd> std = new List<GetAllStd>();
+            List<GETALL> std = new List<GETALL>();
 
             SqlConnection conn = new SqlConnection(cs);
             conn.Open();
@@ -22,22 +23,20 @@ namespace gp_DALL.Repository
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                GetAllStd obj = new GetAllStd
+                GETALL obj = new GETALL
                 {
 
                     ID = (dr["ID"] as int?).GetValueOrDefault(),
                     FNAME = dr["FNAME"].ToString(),
                     SNAME = dr["SNAME"].ToString(),
-                    AGE   = (dr["AGE"] as int?).GetValueOrDefault(),
-                    YEAR = dr["YEAR"].ToString(),
+                    AGE = (dr["AGE"] as int?).GetValueOrDefault(),
                     EMAIL = dr["EMAIL"].ToString(),
                     MOBILE = dr["MOBILE"].ToString(),
                     ADDRESS = dr["ADDRESS"].ToString(),
-                    ISACTIVE = (dr["ISACTIVE"] as bool?).GetValueOrDefault(),
                     CREATEDBY = dr["CREATEDBY"].ToString(),
                     CREATEDON = (dr["ID"] as DateTime?).GetValueOrDefault(),
                     UPDATEDON = (dr["UPDATEDON"] as DateTime?).GetValueOrDefault(),
-                    UPDATEDBY = dr["UPDATEDBY"].ToString(),
+                    UPDATED_BY = dr["UPDATEDBY"].ToString(),
                     COUNTRY_NAME = dr["COUNTRY_NAME"].ToString(),
                     STATE_NAME = dr["STATE_NAME"].ToString(),
                     CITI_NAME = dr["CITY_NAME"].ToString(),
@@ -53,6 +52,8 @@ namespace gp_DALL.Repository
         {
             DateTime Date = DateTime.Now;
 
+
+
             SqlConnection conn = new SqlConnection(cs);
             conn.Open();
             SqlCommand cmd = new SqlCommand("studentcrud", conn);
@@ -64,10 +65,9 @@ namespace gp_DALL.Repository
             cmd.Parameters.AddWithValue("@MOBILE", obj.MOBILE);
             cmd.Parameters.AddWithValue("@EMAIL", obj.EMAIL);
             cmd.Parameters.AddWithValue("@ADDRESS", obj.ADDRESS);
-            cmd.Parameters.AddWithValue("@ISACTIVE", obj.ISACTIVE);
             cmd.Parameters.AddWithValue("@CREATEDBY", obj.CREATEDBY);
             cmd.Parameters.AddWithValue("@CREATEDON", Date.ToString("MM/dd/yyyy"));
-            cmd.Parameters.AddWithValue("@UPDATEDBY", obj.UPDATEDBY);
+            cmd.Parameters.AddWithValue("@UPDATEDBY", obj.UPDATED_BY);
             cmd.Parameters.AddWithValue("@UPDATEDON", Date.ToString("MM/dd/yyyy"));
             cmd.Parameters.AddWithValue("@COUNTRY_ID  ", obj.COUNTRY_ID);
             cmd.Parameters.AddWithValue("@CITI_ID ", obj.CITI_ID);
@@ -79,35 +79,33 @@ namespace gp_DALL.Repository
             return i;
         }
 
-        public  List<GetAllStd> SingelStudent(int ID)
+        public List<GETALL> SingelStudent(int ID)
         {
-            List<GetAllStd> std = new List<GetAllStd>();
+            List<GETALL> std = new List<GETALL>();
 
             SqlConnection conn = new SqlConnection(cs);
             conn.Open();
             SqlCommand cmd = new SqlCommand("studentcrud", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@ACTION", "SINGLE");
-            cmd.Parameters.AddWithValue("@ID",ID);
+            cmd.Parameters.AddWithValue("@ID", ID);
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                GetAllStd obj = new GetAllStd
+                GETALL obj = new GETALL
                 {
 
                     ID = (dr["ID"] as int?).GetValueOrDefault(),
                     FNAME = dr["FNAME"].ToString(),
                     SNAME = dr["SNAME"].ToString(),
                     AGE = (dr["AGE"] as int?).GetValueOrDefault(),
-                    YEAR = dr["YEAR"].ToString(),
                     EMAIL = dr["EMAIL"].ToString(),
                     MOBILE = dr["MOBILE"].ToString(),
                     ADDRESS = dr["ADDRESS"].ToString(),
-                    ISACTIVE = (dr["ISACTIVE"] as bool?).GetValueOrDefault(),
                     CREATEDBY = dr["CREATEDBY"].ToString(),
                     CREATEDON = (dr["ID"] as DateTime?).GetValueOrDefault(),
                     UPDATEDON = (dr["UPDATEDON"] as DateTime?).GetValueOrDefault(),
-                    UPDATEDBY = dr["UPDATEDBY"].ToString(),
+                    UPDATED_BY = dr["UPDATEDBY"].ToString(),
                     COUNTRY_NAME = dr["COUNTRY_NAME"].ToString(),
                     STATE_NAME = dr["STATE_NAME"].ToString(),
                     CITI_NAME = dr["CITY_NAME"].ToString(),
@@ -128,12 +126,12 @@ namespace gp_DALL.Repository
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@ID", ID);
             cmd.Parameters.AddWithValue("@ACTION", "DELETE");
-            int i  =  cmd.ExecuteNonQuery();
+            int i = cmd.ExecuteNonQuery();
             return i;
 
         }
 
-        public int UpdateStudent(int ID , Students obj)
+        public int UpdateStudent(int ID, Students obj)
         {
             DateTime Date = DateTime.Now;
 
@@ -147,15 +145,14 @@ namespace gp_DALL.Repository
             cmd.Parameters.AddWithValue("@MOBILE", obj.MOBILE);
             cmd.Parameters.AddWithValue("@EMAIL", obj.EMAIL);
             cmd.Parameters.AddWithValue("@ADDRESS", obj.ADDRESS);
-            cmd.Parameters.AddWithValue("@ISACTIVE", obj.ISACTIVE);
             cmd.Parameters.AddWithValue("@CREATEDBY", obj.CREATEDBY);
             cmd.Parameters.AddWithValue("@CREATEDON", Date.ToString("MM/dd/yyyy"));
-            cmd.Parameters.AddWithValue("@UPDATEDBY", obj.UPDATEDBY);
+            cmd.Parameters.AddWithValue("@UPDATEDBY", obj.UPDATED_BY);
             cmd.Parameters.AddWithValue("@UPDATEDON", Date.ToString("MM/dd/yyyy"));
             cmd.Parameters.AddWithValue("@COUNTRY_ID  ", obj.COUNTRY_ID);
             cmd.Parameters.AddWithValue("@CITI_ID ", obj.CITI_ID);
             cmd.Parameters.AddWithValue("@STATE_ID", obj.STATE_ID);
-            cmd.Parameters.AddWithValue("@ID",ID);
+            cmd.Parameters.AddWithValue("@ID", ID);
             cmd.Parameters.AddWithValue("@ACTION", "UPDATE");
 
             int i = cmd.ExecuteNonQuery();
@@ -165,3 +162,4 @@ namespace gp_DALL.Repository
 
     }
 }
+

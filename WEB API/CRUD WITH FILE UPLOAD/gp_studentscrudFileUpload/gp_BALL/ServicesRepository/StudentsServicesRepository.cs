@@ -15,11 +15,11 @@ namespace gp_BALL.ServicesRepository
 
             return i;   
         }
-        public List<GetAllStd> AllStudents()
+        public List<GETALL> AllStudents()
         {
             return objdall.GetAllSutents().ToList();
         }
-        public List<GetAllStd> SingleStudents(int ID)
+        public List<GETALL> SingleStudents(int ID)
         {
             return objdall.SingelStudent(ID).ToList();
         }
