@@ -8,17 +8,15 @@ namespace gp_DALL.Models
 {
     public class Countrys
     {
-        public int COUNTRY_ID { get; set; }
-        public string COUNTRY_CODE { get; set; }
-        public string COUNTRY_NAME { get; set; }
-        public string CREATED_BY { get; set; }
-        public string CREATED_ON { get; set; }
-        public string UPDATED_BY { get; set; }
-        public string UPDATED_ON { get; set; }
-        public byte[] COUNTRY_IMG { get; set; }  
-
-        public string COUNTRY_IMG_Path { set; get; }
-
+        public int COUNTRY_ID { set; get; }
+        public string COUNTRY_CODE { set; get; }
+        public string COUNTRY_NAME { set; get; }
+        public string CREATED_BY { set; get; }
+        public string CREATED_ON { set; get; }
+        public string UPDATED_BY { set; get; }
+        public string UPDATED_ON { set; get; }
+        public byte[] COUNTRY_IMG { set; get; }
+        public string COUNTRY_IMG_Path { get; set; }
 
 
 

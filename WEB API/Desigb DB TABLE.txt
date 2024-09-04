@@ -267,7 +267,7 @@ BEGIN
             STATE_ID = @STATE_ID, 
             CITI_ID = @CITI_ID,
 			UNI_ID	=@UNI_ID ,
-	        CLG_ID  =  @CLG_ID ,
+	        CLG_ID  =@CLG_ID ,
 	        PROG_ID =@PROG_ID
         WHERE 
             ID = @ID 

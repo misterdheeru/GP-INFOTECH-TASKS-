@@ -30,9 +30,10 @@ namespace gp_DALL.Repository
                     CREATED_ON = dr["CREATED_ON"].ToString(),
                     UPDATED_BY = dr["UPDATED_BY"].ToString(),
                     UPDATED_ON = dr["UPDATED_ON"].ToString(),
-                    COUNTRY_IMG = dr["COUNTRY_IMG"] as byte[]  ,
-                   
+                    COUNTRY_IMG = dr["COUNTRY_IMG"] as byte[],
+                    COUNTRY_IMG_Path = dr["COUNTRY_IMG_Path"].ToString(),
                 };
+
                 std.Add(obj);
             }
 
@@ -54,9 +55,11 @@ namespace gp_DALL.Repository
             cmd.Parameters.AddWithValue("@CREATEDBY", obj.CREATED_BY);
             cmd.Parameters.AddWithValue("@CREATEDON", Date.ToString("MM/dd/yyyy"));
             cmd.Parameters.AddWithValue("@UPDATEDBY", obj.UPDATED_BY);
-            cmd.Parameters.AddWithValue("@COUNTRY_IMG", obj.COUNTRY_IMG ?? (object)DBNull.Value);
-            cmd.Parameters.AddWithValue("@COUNTRY_IMG_PATH", obj.COUNTRY_IMG_Path ?? (object)DBNull.Value);  // New parameter
+            cmd.Parameters.AddWithValue("@COUNTRY_IMG", obj.COUNTRY_IMG);
+            cmd.Parameters.AddWithValue("@COUNTRY_IMG_Path", obj.COUNTRY_IMG_Path);
+
             int i = cmd.ExecuteNonQuery();
+
             return i;
 
         }
@@ -92,6 +95,39 @@ namespace gp_DALL.Repository
             int i = cmd.ExecuteNonQuery();
 
             return i;
+        }
+
+
+        public List<Countrys> GetSingleCountry(int ID)
+        {
+            List<Countrys> std = new List<Countrys>();
+
+            SqlConnection conn = new SqlConnection(cs);
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("countryscrud", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@ACTION", "SINGLE");
+            cmd.Parameters.AddWithValue("@ID", ID);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                Countrys obj = new Countrys
+                {
+                    COUNTRY_ID = (dr["COUNTRY_ID"] as int?).GetValueOrDefault(),
+                    COUNTRY_CODE = dr["COUNTRY_CODE"].ToString(),
+                    COUNTRY_NAME = dr["COUNTRY_NAME"].ToString(),
+                    CREATED_BY = dr["CREATED_BY"].ToString(),
+                    CREATED_ON = dr["CREATED_ON"].ToString(),
+                    UPDATED_BY = dr["UPDATED_BY"].ToString(),
+                    UPDATED_ON = dr["UPDATED_ON"].ToString(),
+                    COUNTRY_IMG = dr["COUNTRY_IMG"] as byte[],
+                    COUNTRY_IMG_Path = dr["COUNTRY_IMG_Path"].ToString(),
+                };
+
+                std.Add(obj);
+            }
+
+            return std;
         }
 
     }

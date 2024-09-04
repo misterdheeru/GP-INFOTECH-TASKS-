@@ -1,10 +1,8 @@
 ﻿using gp_DALL.Models;
 using gp_DALL.Repository;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace gp_BALL.ServicesRepository
 {
@@ -36,6 +34,10 @@ namespace gp_BALL.ServicesRepository
 
             return i;
         }
-    
+        public List<Countrys> SingleCountrys(int ID)
+        {
+            return objdall.GetSingleCountry(ID).ToList();
+
+        }
     }
 }

@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Microsoft.AspNetCore.Cors;
 using System.Web.Http;
+
 
 namespace gp_studentscrudFileUpload
 {
@@ -9,11 +8,13 @@ namespace gp_studentscrudFileUpload
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
+            // Enable CORS for all domains, headers, and methods
+ 
 
-            // Web API routes
+            // Enable attribute-based routing
             config.MapHttpAttributeRoutes();
 
+            // Configure the default API route
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",

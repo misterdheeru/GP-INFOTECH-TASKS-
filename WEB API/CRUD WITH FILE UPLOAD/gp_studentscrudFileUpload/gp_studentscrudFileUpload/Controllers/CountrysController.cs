@@ -8,9 +8,6 @@ using System;
 using System.Web.Http;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Net;
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Http;
 
 namespace gp_studentscrudFileUpload.Controllers
 {
@@ -20,6 +17,8 @@ namespace gp_studentscrudFileUpload.Controllers
 
         CountriesRepository objdall = new CountriesRepository();
 
+
+ 
         [HttpGet]
         public IHttpActionResult GetAllCountries()
         {
@@ -28,54 +27,105 @@ namespace gp_studentscrudFileUpload.Controllers
         }
 
         [HttpPost]
- 
-        public async Task<IHttpActionResult> InsertCountrys()
+        //public async Task<IHttpActionResult> InsertCountrys()
+        //{
+        //    if (!Request.Content.IsMimeMultipartContent())
+        //    {
+        //        return BadRequest("Unsupported media type");
+        //    }
+
+        //    var provider = new MultipartFormDataStreamProvider(Path.GetTempPath());
+        //    await Request.Content.ReadAsMultipartAsync(provider);
+
+        //    var country = new Countrys
+        //    {
+        //        COUNTRY_ID = int.Parse(provider.FormData["COUNTRY_ID"]),
+        //        COUNTRY_CODE = provider.FormData["COUNTRY_CODE"],
+        //        COUNTRY_NAME = provider.FormData["COUNTRY_NAME"],
+        //        CREATED_BY = provider.FormData["CREATED_BY"],
+        //        CREATED_ON = DateTime.Now.ToString(),
+        //        UPDATED_BY = provider.FormData["UPDATED_BY"],
+        //        UPDATED_ON = DateTime.Now.ToString(),
+        //        COUNTRY_IMG_Path = provider.FormData["COUNTRY_IMG_Path"],
+        //    };
+        //    var file = provider.FileData.FirstOrDefault();
+        //    if (file != null)
+        //    {
+        //        var fileInfo = new FileInfo(file.LocalFileName);
+        //        var filePath = Path.Combine(HttpContext.Current.Server.MapPath("~/img"), fileInfo.Name);
+
+        //        Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+        //        File.Move(file.LocalFileName, filePath);
+
+        //        using (var memoryStream = new MemoryStream())
+        //        {
+        //            using (var fileStream = new FileStream(filePath, FileMode.Open))
+        //            {
+        //                await fileStream.CopyToAsync(memoryStream);
+        //                country.COUNTRY_IMG = memoryStream.ToArray();
+        //            }
+        //        }
+
+        //        country.COUNTRY_IMG_Path = fileInfo.Name;
+        //    }
+
+        //    int result = objball.insertCountryRecord(country);
+        //    return Ok("RECORD IS INSERTED");
+        //}
+
+        public async Task<IHttpActionResult> AddFile()
         {
-            if (!Request.Content.IsMimeMultipartContent())
+            string result = "";
+            try
             {
-                return BadRequest("Unsupported media type");
-            }
-
-            var provider = new MultipartFormDataStreamProvider(Path.GetTempPath());
-            await Request.Content.ReadAsMultipartAsync(provider);
-
-            var country = new Countrys
-            {
-                COUNTRY_ID = int.Parse(provider.FormData["COUNTRY_ID"]),
-                COUNTRY_CODE = provider.FormData["COUNTRY_CODE"],
-                COUNTRY_NAME = provider.FormData["COUNTRY_NAME"],
-                CREATED_BY = provider.FormData["CREATED_BY"],
-                CREATED_ON = DateTime.Now.ToString(),
-                UPDATED_BY = provider.FormData["UPDATED_BY"],
-                UPDATED_ON = DateTime.Now.ToString()
-            };
-
-            var file = provider.FileData.FirstOrDefault();
-            if (file != null)
-            {
-                var fileInfo = new FileInfo(file.LocalFileName);
-                var filePath = Path.Combine(HttpContext.Current.Server.MapPath("~/Images"), fileInfo.Name);
-
-                Directory.CreateDirectory(Path.GetDirectoryName(filePath));
-                File.Move(file.LocalFileName, filePath);
-
-                using (var memoryStream = new MemoryStream())
+                var provider = new MultipartFormDataStreamProvider(Path.GetTempPath());
+                await Request.Content.ReadAsMultipartAsync(provider);
+                var country = new Countrys
                 {
-                    using (var fileStream = new FileStream(filePath, FileMode.Open))
-                    {
-                        await fileStream.CopyToAsync(memoryStream);
-                        country.COUNTRY_IMG = memoryStream.ToArray();
-                    }
+                    COUNTRY_ID = int.Parse(provider.FormData["COUNTRY_ID"]),
+                    COUNTRY_CODE = provider.FormData["COUNTRY_CODE"],
+                    COUNTRY_NAME = provider.FormData["COUNTRY_NAME"],
+                    CREATED_BY = provider.FormData["CREATED_BY"],
+                    CREATED_ON = DateTime.Now.ToString(),
+                    UPDATED_BY = provider.FormData["UPDATED_BY"],
+                    UPDATED_ON = DateTime.Now.ToString(),
+                    COUNTRY_IMG_Path = provider.FormData["COUNTRY_IMG_Path"],
+                };
+
+                string fileName = null;
+                string imageName = null;
+                var httpRequest = HttpContext.Current.Request;
+                var postedImage = httpRequest.Files["COUNTRY_IMG"];
+                if (postedImage != null)
+                {
+                    // Generate a unique image name
+                    imageName = new String(Path.GetFileNameWithoutExtension(postedImage.FileName).Take(10).ToArray()).Replace(" ", "-");
+                    imageName = imageName + DateTime.Now.ToString("yymmssfff") + Path.GetExtension(postedImage.FileName);
+
+                    // Save the image to the server
+                    var filePath = HttpContext.Current.Server.MapPath("~/img/" + imageName);
+                    postedImage.SaveAs(filePath);
+
+                    // Save the URL path in the database
+                    country.COUNTRY_IMG_Path = "/img/" + imageName;
                 }
 
-                country.COUNTRY_IMG_Path = fileInfo.Name;
+                int i = objball.insertCountryRecord(country);
+                if (i > 0)
+                {
+                    result = "File uploaded successfully";
+                }
+                else
+                {
+                    result = "File upload failed";
+                }
             }
-
-            int result = objball.insertCountryRecord(country);
-            return Ok("RECORD IS INSERTED");
+            catch (Exception)
+            {
+                throw;
+            }
+            return Ok(result);
         }
-
-
 
         [HttpPut]
         public IHttpActionResult UpdateCountrys(int ID, Countrys obj)
@@ -107,6 +157,14 @@ namespace gp_studentscrudFileUpload.Controllers
             }
         }
 
+        [HttpGet]
+        public IHttpActionResult GetSingleCountrys(int ID)
+        {
+            var res = objball.SingleCountrys(ID);
+            return Ok(res);
+        }
+
     }
 
+ 
 }

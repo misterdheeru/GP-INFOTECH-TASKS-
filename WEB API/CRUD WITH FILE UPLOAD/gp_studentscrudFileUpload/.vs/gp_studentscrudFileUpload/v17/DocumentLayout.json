@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2C295FF-FA3B-45B1-95B4-5D6EF5AF7EA3}|gp_DALL\\gp_DALL.csproj|d:\\programming\\gp infotech\\web api\\crud with file upload\\gp_studentscrudfileupload\\gp_dall\\models\\countrys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2C295FF-FA3B-45B1-95B4-5D6EF5AF7EA3}|gp_DALL\\gp_DALL.csproj|solutionrelative:gp_dall\\models\\countrys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2C295FF-FA3B-45B1-95B4-5D6EF5AF7EA3}|gp_DALL\\gp_DALL.csproj|D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_dall\\repository\\countriesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2C295FF-FA3B-45B1-95B4-5D6EF5AF7EA3}|gp_DALL\\gp_DALL.csproj|solutionrelative:gp_dall\\repository\\countriesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E8686CF6-3341-455A-964C-D8F3EF3A8C9A}|gp_studentscrudFileUpload\\gp_studentscrudFileUpload.csproj|d:\\programming\\gp infotech\\web api\\crud with file upload\\gp_studentscrudfileupload\\gp_studentscrudfileupload\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8686CF6-3341-455A-964C-D8F3EF3A8C9A}|gp_studentscrudFileUpload\\gp_studentscrudFileUpload.csproj|solutionrelative:gp_studentscrudfileupload\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8686CF6-3341-455A-964C-D8F3EF3A8C9A}|gp_studentscrudFileUpload\\gp_studentscrudFileUpload.csproj|D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_studentscrudfileupload\\controllers\\countryscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8686CF6-3341-455A-964C-D8F3EF3A8C9A}|gp_studentscrudFileUpload\\gp_studentscrudFileUpload.csproj|solutionrelative:gp_studentscrudfileupload\\controllers\\countryscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8686CF6-3341-455A-964C-D8F3EF3A8C9A}|gp_studentscrudFileUpload\\gp_studentscrudFileUpload.csproj|D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_studentscrudfileupload\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8686CF6-3341-455A-964C-D8F3EF3A8C9A}|gp_studentscrudFileUpload\\gp_studentscrudFileUpload.csproj|solutionrelative:gp_studentscrudfileupload\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BCF4D7DC-5192-46FB-8718-E06FB42671EF}|gp_BALL\\gp_BALL.csproj|D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_ball\\servicesrepository\\countrysservicesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BCF4D7DC-5192-46FB-8718-E06FB42671EF}|gp_BALL\\gp_BALL.csproj|solutionrelative:gp_ball\\servicesrepository\\countrysservicesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C295FF-FA3B-45B1-95B4-5D6EF5AF7EA3}|gp_DALL\\gp_DALL.csproj|D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_dall\\repository\\countriesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2C295FF-FA3B-45B1-95B4-5D6EF5AF7EA3}|gp_DALL\\gp_DALL.csproj|solutionrelative:gp_dall\\repository\\countriesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C295FF-FA3B-45B1-95B4-5D6EF5AF7EA3}|gp_DALL\\gp_DALL.csproj|D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_dall\\models\\countrys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2C295FF-FA3B-45B1-95B4-5D6EF5AF7EA3}|gp_DALL\\gp_DALL.csproj|solutionrelative:gp_dall\\models\\countrys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2C295FF-FA3B-45B1-95B4-5D6EF5AF7EA3}|gp_DALL\\gp_DALL.csproj|D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_dall\\models\\getall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2C295FF-FA3B-45B1-95B4-5D6EF5AF7EA3}|gp_DALL\\gp_DALL.csproj|solutionrelative:gp_dall\\models\\getall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8686CF6-3341-455A-964C-D8F3EF3A8C9A}|gp_studentscrudFileUpload\\gp_studentscrudFileUpload.csproj|D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_studentscrudfileupload\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8686CF6-3341-455A-964C-D8F3EF3A8C9A}|gp_studentscrudFileUpload\\gp_studentscrudFileUpload.csproj|solutionrelative:gp_studentscrudfileupload\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2C295FF-FA3B-45B1-95B4-5D6EF5AF7EA3}|gp_DALL\\gp_DALL.csproj|D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_dall\\repository\\studentsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2C295FF-FA3B-45B1-95B4-5D6EF5AF7EA3}|gp_DALL\\gp_DALL.csproj|D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_dall\\models\\students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2C295FF-FA3B-45B1-95B4-5D6EF5AF7EA3}|gp_DALL\\gp_DALL.csproj|solutionrelative:gp_dall\\models\\students.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2C295FF-FA3B-45B1-95B4-5D6EF5AF7EA3}|gp_DALL\\gp_DALL.csproj|D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_dall\\models\\getall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2C295FF-FA3B-45B1-95B4-5D6EF5AF7EA3}|gp_DALL\\gp_DALL.csproj|solutionrelative:gp_dall\\models\\getall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -61,61 +65,73 @@
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_studentscrudFileUpload\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "gp_studentscrudFileUpload\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_studentscrudFileUpload\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "gp_studentscrudFileUpload\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAADwvwoAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T19:47:56.428Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Countrys.cs",
               "DocumentMoniker": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_DALL\\Models\\Countrys.cs",
               "RelativeDocumentMoniker": "gp_DALL\\Models\\Countrys.cs",
               "ToolTip": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_DALL\\Models\\Countrys.cs",
               "RelativeToolTip": "gp_DALL\\Models\\Countrys.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAmwBMAAAA0AAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAkwBIAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T18:13:03.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T18:13:03.512Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "CountrysServicesRepository.cs",
               "DocumentMoniker": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_BALL\\ServicesRepository\\CountrysServicesRepository.cs",
               "RelativeDocumentMoniker": "gp_BALL\\ServicesRepository\\CountrysServicesRepository.cs",
               "ToolTip": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_BALL\\ServicesRepository\\CountrysServicesRepository.cs",
               "RelativeToolTip": "gp_BALL\\ServicesRepository\\CountrysServicesRepository.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAAAA4AAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T18:16:05.848Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CountriesRepository.cs",
               "DocumentMoniker": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_DALL\\Repository\\CountriesRepository.cs",
               "RelativeDocumentMoniker": "gp_DALL\\Repository\\CountriesRepository.cs",
               "ToolTip": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_DALL\\Repository\\CountriesRepository.cs",
               "RelativeToolTip": "gp_DALL\\Repository\\CountriesRepository.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAIwDgAAABHAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAADwvwoAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T18:13:52.308Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "CountrysController.cs",
               "DocumentMoniker": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_studentscrudFileUpload\\Controllers\\CountrysController.cs",
               "RelativeDocumentMoniker": "gp_studentscrudFileUpload\\Controllers\\CountrysController.cs",
               "ToolTip": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_studentscrudFileUpload\\Controllers\\CountrysController.cs",
               "RelativeToolTip": "gp_studentscrudFileUpload\\Controllers\\CountrysController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAAwDEAAAA0AAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAjwF4AAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T18:18:00.882Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "StudentsController.cs",
               "DocumentMoniker": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_studentscrudFileUpload\\Controllers\\StudentsController.cs",
               "RelativeDocumentMoniker": "gp_studentscrudFileUpload\\Controllers\\StudentsController.cs",
@@ -127,7 +143,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
+              "Title": "GETALL.cs",
+              "DocumentMoniker": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_DALL\\Models\\GETALL.cs",
+              "RelativeDocumentMoniker": "gp_DALL\\Models\\GETALL.cs",
+              "ToolTip": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_DALL\\Models\\GETALL.cs",
+              "RelativeToolTip": "gp_DALL\\Models\\GETALL.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA6wBcAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T18:11:53.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "StudentsServicesRepository.cs",
               "DocumentMoniker": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_BALL\\ServicesRepository\\StudentsServicesRepository.cs",
               "RelativeDocumentMoniker": "gp_BALL\\ServicesRepository\\StudentsServicesRepository.cs",
@@ -139,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "StudentsRepository.cs",
               "DocumentMoniker": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_DALL\\Repository\\StudentsRepository.cs",
               "RelativeDocumentMoniker": "gp_DALL\\Repository\\StudentsRepository.cs",
@@ -151,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Students.cs",
               "DocumentMoniker": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_DALL\\Models\\Students.cs",
               "RelativeDocumentMoniker": "gp_DALL\\Models\\Students.cs",
@@ -160,18 +188,6 @@
               "ViewState": "AQIAAAsAAAAAAAAAAAAkwA0AAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-01T11:14:38.66Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GETALL.cs",
-              "DocumentMoniker": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_DALL\\Models\\GETALL.cs",
-              "RelativeDocumentMoniker": "gp_DALL\\Models\\GETALL.cs",
-              "ToolTip": "D:\\PROGRAMMING\\GP INFOTECH\\WEB API\\CRUD WITH FILE UPLOAD\\gp_studentscrudFileUpload\\gp_DALL\\Models\\GETALL.cs",
-              "RelativeToolTip": "gp_DALL\\Models\\GETALL.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAQwBcAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T18:11:53.685Z"
             }
           ]
         }

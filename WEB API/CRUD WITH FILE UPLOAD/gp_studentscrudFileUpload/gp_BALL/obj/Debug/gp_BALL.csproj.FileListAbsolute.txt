@@ -7,3 +7,4 @@ D:\PROGRAMMING\GP INFOTECH\WEB API\CRUD WITH FILE UPLOAD\gp_studentscrudFileUplo
 D:\PROGRAMMING\GP INFOTECH\WEB API\CRUD WITH FILE UPLOAD\gp_studentscrudFileUpload\gp_BALL\obj\Debug\gp_BALL.csproj.Up2Date
 D:\PROGRAMMING\GP INFOTECH\WEB API\CRUD WITH FILE UPLOAD\gp_studentscrudFileUpload\gp_BALL\obj\Debug\gp_BALL.dll
 D:\PROGRAMMING\GP INFOTECH\WEB API\CRUD WITH FILE UPLOAD\gp_studentscrudFileUpload\gp_BALL\obj\Debug\gp_BALL.pdb
+D:\PROGRAMMING\GP INFOTECH\WEB API\CRUD WITH FILE UPLOAD\gp_studentscrudFileUpload\gp_BALL\bin\Debug\System.Web.Cors.dll
