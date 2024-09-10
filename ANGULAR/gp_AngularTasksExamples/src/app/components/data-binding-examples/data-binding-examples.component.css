@@ -1,0 +1,35 @@
+img{
+    width: 200px;
+    aspect-ratio: 0;
+    border-radius: 10px;
+}
+
+.gp_img_boder_1{
+   border-radius: 60px;
+   box-shadow: 2px -1px 9px 4px gray;
+}
+.gp_img_boder_2{
+    border-radius: 50px;
+}
+.gp_Header{
+   padding: 10px;
+   background-color: blue;
+   color: white;
+}
+.gp_Header2{
+    margin: 10px;
+    }
+
+    .card{
+        display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    padding: 34px;
+    max-width: 277px;
+    margin: 10px;
+}
+.body{
+    margin: 9px;
+    text-align: center;
+}
+       
