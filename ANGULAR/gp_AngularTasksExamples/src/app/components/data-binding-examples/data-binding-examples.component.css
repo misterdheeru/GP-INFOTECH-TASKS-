@@ -1,35 +1,66 @@
-img{
+.gp_img{
     width: 200px;
-    aspect-ratio: 0;
-    border-radius: 10px;
+}
+ 
+h1{
+    text-align: center;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}
+#gp_title{
+    margin:10px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(255, 0, 0);
+    color: white;
 }
 
-.gp_img_boder_1{
-   border-radius: 60px;
-   box-shadow: 2px -1px 9px 4px gray;
+#gp_exmp{
+    
+    padding: 10px;
+    color: white;
+    background-color: pink;
 }
-.gp_img_boder_2{
-    border-radius: 50px;
-}
-.gp_Header{
-   padding: 10px;
-   background-color: blue;
-   color: white;
-}
-.gp_Header2{
-    margin: 10px;
-    }
-
-    .card{
-        display: flex;
+.card{
+    display: flex;
     flex-wrap:wrap;
     flex-direction: row;
     padding: 34px;
     max-width: 277px;
     margin: 10px;
+    box-shadow: 1px 3px 7px 0px gray;
+ 
 }
-.body{
-    margin: 9px;
+.card2{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    padding: 34px;
+    max-width: 277px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 3px 7px 0px gray;
+}
+/* .gp_header{
+
+}
+ 
+.gp_body{
+
+} */
+.gp_footer{
+    text-align: center;
+    width: 100%;
+}
+.row{
     text-align: center;
 }
-       
+
+
+
+
+
+
+
