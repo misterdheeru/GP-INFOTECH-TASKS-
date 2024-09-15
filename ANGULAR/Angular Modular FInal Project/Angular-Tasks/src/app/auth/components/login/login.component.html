@@ -1,0 +1,26 @@
+ <div class="container-fluid">
+    <div class="overlay">
+        <div class="container">
+            <div class="content-data-form">
+                <dd>Username</dd>
+                <dd><input type="text" placeholder="Enter your username" #username></dd>
+                <dd>Password</dd>
+                <dd>
+                    <input [type]=txtBox placeholder="Enter your password" #password>
+                    <br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" (change)="checkedBox($event)">
+                        <label class="form-check-label" for="flexCheckDefault">
+                         Show password
+                        </label>
+                    </div>
+                </dd>
+                  
+                <dd>
+                    <br>
+                    <button class="btn btn-primary" (click)="login()">Login</button>
+                </dd>
+            </div>
+        </div>
+    </div>
+</div>

@@ -14,14 +14,12 @@ namespace gp_BALL.ServicesRepository
         {
             return objdall.GetAllCountrys().ToList();
         }
-
         public int insertCountryRecord(Countrys obj)
         {
             int i = objdall.InsertRecord(obj);
 
             return i;
         }
-
         public int updatedCountryRecord(int ID, Countrys obj)
         {
             int i = objdall.UpdateCountrys(ID, obj);

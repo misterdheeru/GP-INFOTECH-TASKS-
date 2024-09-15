@@ -27,12 +27,15 @@ namespace gp_DALL.Repository
                 {
 
                     ID = (dr["ID"] as int?).GetValueOrDefault(),
+                    USERNAME = dr["USERNAME"].ToString(),
+                    PASSWORD = dr["PASSWORD"].ToString(),
                     FNAME = dr["FNAME"].ToString(),
                     SNAME = dr["SNAME"].ToString(),
                     AGE = (dr["AGE"] as int?).GetValueOrDefault(),
                     EMAIL = dr["EMAIL"].ToString(),
                     MOBILE = dr["MOBILE"].ToString(),
                     ADDRESS = dr["ADDRESS"].ToString(),
+                    IS_ACTIVE = (dr["IS_ACTIVE"] as bool?).GetValueOrDefault(),
                     CREATEDBY = dr["CREATEDBY"].ToString(),
                     CREATEDON = (dr["ID"] as DateTime?).GetValueOrDefault(),
                     UPDATEDON = (dr["UPDATEDON"] as DateTime?).GetValueOrDefault(),
@@ -59,12 +62,15 @@ namespace gp_DALL.Repository
             SqlCommand cmd = new SqlCommand("studentcrud", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@ID", obj.ID);
+            cmd.Parameters.AddWithValue("@USERNAME", obj.USERNAME);
+            cmd.Parameters.AddWithValue("@PASSWORD", obj.PASSWORD);
             cmd.Parameters.AddWithValue("@FNAME", obj.FNAME);
             cmd.Parameters.AddWithValue("@SNAME", obj.SNAME);
             cmd.Parameters.AddWithValue("@AGE", obj.AGE);
             cmd.Parameters.AddWithValue("@MOBILE", obj.MOBILE);
             cmd.Parameters.AddWithValue("@EMAIL", obj.EMAIL);
             cmd.Parameters.AddWithValue("@ADDRESS", obj.ADDRESS);
+            cmd.Parameters.AddWithValue("@IS_ACRIVE", obj.IS_ACTIVE);
             cmd.Parameters.AddWithValue("@CREATEDBY", obj.CREATEDBY);
             cmd.Parameters.AddWithValue("@CREATEDON", Date.ToString("MM/dd/yyyy"));
             cmd.Parameters.AddWithValue("@UPDATEDBY", obj.UPDATED_BY);
@@ -96,12 +102,15 @@ namespace gp_DALL.Repository
                 {
 
                     ID = (dr["ID"] as int?).GetValueOrDefault(),
+                    USERNAME = dr["USERNAME"].ToString(),
+                    PASSWORD = dr["PASSWORD"].ToString(),
                     FNAME = dr["FNAME"].ToString(),
                     SNAME = dr["SNAME"].ToString(),
                     AGE = (dr["AGE"] as int?).GetValueOrDefault(),
                     EMAIL = dr["EMAIL"].ToString(),
                     MOBILE = dr["MOBILE"].ToString(),
                     ADDRESS = dr["ADDRESS"].ToString(),
+                    IS_ACTIVE = (dr["IS_ACTIVE"] as bool?).GetValueOrDefault(),
                     CREATEDBY = dr["CREATEDBY"].ToString(),
                     CREATEDON = (dr["ID"] as DateTime?).GetValueOrDefault(),
                     UPDATEDON = (dr["UPDATEDON"] as DateTime?).GetValueOrDefault(),
@@ -139,12 +148,15 @@ namespace gp_DALL.Repository
             conn.Open();
             SqlCommand cmd = new SqlCommand("studentcrud", conn);
             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@USERNAME", obj.USERNAME);
+            cmd.Parameters.AddWithValue("@PASSWORD", obj.PASSWORD);
             cmd.Parameters.AddWithValue("@FNAME", obj.FNAME);
             cmd.Parameters.AddWithValue("@SNAME", obj.SNAME);
             cmd.Parameters.AddWithValue("@AGE", obj.AGE);
             cmd.Parameters.AddWithValue("@MOBILE", obj.MOBILE);
             cmd.Parameters.AddWithValue("@EMAIL", obj.EMAIL);
             cmd.Parameters.AddWithValue("@ADDRESS", obj.ADDRESS);
+            cmd.Parameters.AddWithValue("@IS_ACRIVE", obj.IS_ACTIVE);
             cmd.Parameters.AddWithValue("@CREATEDBY", obj.CREATEDBY);
             cmd.Parameters.AddWithValue("@CREATEDON", Date.ToString("MM/dd/yyyy"));
             cmd.Parameters.AddWithValue("@UPDATEDBY", obj.UPDATED_BY);
@@ -158,6 +170,42 @@ namespace gp_DALL.Repository
             int i = cmd.ExecuteNonQuery();
 
             return i;
+        }
+
+        public List<Login> GetLogin(Students objs)
+        {
+            List<Login> std = new List<Login>();
+
+            SqlConnection conn = new SqlConnection(cs);
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("studentcrud", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@ACTION", "LOGIN");
+            cmd.Parameters.AddWithValue("@USERNAME", objs.USERNAME);
+            cmd.Parameters.AddWithValue("@PASSWORD", objs.PASSWORD);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                Login obj = new Login
+                {
+
+                    ID = (dr["ID"] as int?).GetValueOrDefault(),
+                    USERNAME = dr["USERNAME"].ToString(),
+                    PASSWORD = dr["PASSWORD"].ToString(),
+                    FNAME = dr["FNAME"].ToString(),
+                    SNAME = dr["SNAME"].ToString(),
+                    AGE = (dr["AGE"] as int?).GetValueOrDefault(),
+                    EMAIL = dr["EMAIL"].ToString(),
+                    MOBILE = dr["MOBILE"].ToString(),
+                    ADDRESS = dr["ADDRESS"].ToString(),
+                    IS_ACTIVE = (dr["IS_ACTIVE"] as bool?).GetValueOrDefault()
+             
+                };
+
+                std.Add(obj);
+            }
+
+            return std;
         }
 
     }

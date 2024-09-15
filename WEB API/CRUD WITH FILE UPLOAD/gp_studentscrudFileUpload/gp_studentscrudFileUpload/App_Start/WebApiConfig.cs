@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Cors;
-using System.Web.Http;
+﻿ using System.Web.Http;
+ 
 
 
 namespace gp_studentscrudFileUpload
@@ -8,8 +8,14 @@ namespace gp_studentscrudFileUpload
     {
         public static void Register(HttpConfiguration config)
         {
-            // Enable CORS for all domains, headers, and methods
- 
+
+            #region TRANSFER DATA TO ANGULAR OR OTHER API CALLS 
+
+            var cors = new System.Web.Http.Cors.EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(cors);
+
+            #endregion
+
 
             // Enable attribute-based routing
             config.MapHttpAttributeRoutes();

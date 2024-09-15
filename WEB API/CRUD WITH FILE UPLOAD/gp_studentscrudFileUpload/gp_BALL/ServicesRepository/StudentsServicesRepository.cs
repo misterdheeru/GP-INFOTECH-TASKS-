@@ -33,5 +33,12 @@ namespace gp_BALL.ServicesRepository
         {
             return objdall.UpdateStudent(ID,obj);
         }
+
+        public List<Login> LoginStudents(Students Obj)
+        {
+            var res  = objdall.GetLogin(Obj).ToList();
+
+            return res;
+        }
     }
 }

@@ -107,3 +107,10 @@ D:\PROGRAMMING\GP INFOTECH\WEB API\CRUD WITH FILE UPLOAD\gp_studentscrudFileUplo
 D:\PROGRAMMING\GP INFOTECH\WEB API\CRUD WITH FILE UPLOAD\gp_studentscrudFileUpload\gp_studentscrudFileUpload\bin\Microsoft.Extensions.Options.xml
 D:\PROGRAMMING\GP INFOTECH\WEB API\CRUD WITH FILE UPLOAD\gp_studentscrudFileUpload\gp_studentscrudFileUpload\bin\Microsoft.Net.Http.Headers.xml
 D:\PROGRAMMING\GP INFOTECH\WEB API\CRUD WITH FILE UPLOAD\gp_studentscrudFileUpload\gp_studentscrudFileUpload\bin\System.Text.Encodings.Web.xml
+D:\PROGRAMMING\GP INFOTECH\WEB API\CRUD WITH FILE UPLOAD\gp_studentscrudFileUpload\gp_studentscrudFileUpload\bin\Newtonsoft.Json.Bson.dll
+D:\PROGRAMMING\GP INFOTECH\WEB API\CRUD WITH FILE UPLOAD\gp_studentscrudFileUpload\gp_studentscrudFileUpload\bin\System.Web.Http.Cors.dll
+D:\PROGRAMMING\GP INFOTECH\WEB API\CRUD WITH FILE UPLOAD\gp_studentscrudFileUpload\gp_studentscrudFileUpload\bin\gp_BALL.dll.config
+D:\PROGRAMMING\GP INFOTECH\WEB API\CRUD WITH FILE UPLOAD\gp_studentscrudFileUpload\gp_studentscrudFileUpload\bin\gp_DALL.dll.config
+D:\PROGRAMMING\GP INFOTECH\WEB API\CRUD WITH FILE UPLOAD\gp_studentscrudFileUpload\gp_studentscrudFileUpload\bin\Newtonsoft.Json.Bson.pdb
+D:\PROGRAMMING\GP INFOTECH\WEB API\CRUD WITH FILE UPLOAD\gp_studentscrudFileUpload\gp_studentscrudFileUpload\bin\Newtonsoft.Json.Bson.xml
+D:\PROGRAMMING\GP INFOTECH\WEB API\CRUD WITH FILE UPLOAD\gp_studentscrudFileUpload\gp_studentscrudFileUpload\bin\System.Web.Http.Cors.xml

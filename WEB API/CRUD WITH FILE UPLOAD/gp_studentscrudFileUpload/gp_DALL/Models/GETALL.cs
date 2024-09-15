@@ -9,11 +9,14 @@ namespace gp_DALL.Models
     public class GETALL
     {
         public int ID { set; get; }
+        public string USERNAME { set; get; }
+        public string PASSWORD { set; get; }
         public string FNAME { set; get; }
         public string SNAME { set; get; }
         public int AGE { set; get; }
         public string EMAIL { set; get; }
         public string MOBILE { set; get; }
+        public bool IS_ACTIVE { set; get; }
         public string ADDRESS { set; get; }
         public string CREATEDBY { set; get; }
         public DateTime CREATEDON { set; get; }
@@ -22,5 +25,6 @@ namespace gp_DALL.Models
         public string COUNTRY_NAME { set; get; }
         public string STATE_NAME { set; get; }
         public string CITI_NAME { set; get; }
+
     }
 }

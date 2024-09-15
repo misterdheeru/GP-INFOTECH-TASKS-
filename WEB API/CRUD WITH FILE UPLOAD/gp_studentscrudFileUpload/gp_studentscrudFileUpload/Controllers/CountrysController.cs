@@ -8,8 +8,7 @@ using System;
 using System.Web.Http;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Net;
-using System.Net.Http.Headers;
+
 
 namespace gp_studentscrudFileUpload.Controllers
 {
