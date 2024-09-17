@@ -73,7 +73,7 @@ namespace gp_studentscrudFileUpload.Controllers
         //    int result = objball.insertCountryRecord(country);
         //    return Ok("RECORD IS INSERTED");
         //}
-
+ 
         public async Task<IHttpActionResult> AddFile()
         {
             string result = "";
@@ -81,50 +81,41 @@ namespace gp_studentscrudFileUpload.Controllers
             {
                 var provider = new MultipartFormDataStreamProvider(Path.GetTempPath());
                 await Request.Content.ReadAsMultipartAsync(provider);
+
                 var country = new Countrys
                 {
                     COUNTRY_ID = int.Parse(provider.FormData["COUNTRY_ID"]),
                     COUNTRY_CODE = provider.FormData["COUNTRY_CODE"],
                     COUNTRY_NAME = provider.FormData["COUNTRY_NAME"],
-                    CREATED_BY = provider.FormData["CREATED_BY"],
+                    CREATED_BY = "system", // Replace with actual user if necessary
                     CREATED_ON = DateTime.Now.ToString(),
-                    UPDATED_BY = provider.FormData["UPDATED_BY"],
+                    UPDATED_BY = "system", // Replace with actual user if necessary
                     UPDATED_ON = DateTime.Now.ToString(),
-                    COUNTRY_IMG_Path = provider.FormData["COUNTRY_IMG_Path"],
+                    COUNTRY_IMG_Path = provider.FormData["COUNTRY_IMG_PATH"]
                 };
 
-                string fileName = null;
-                string imageName = null;
                 var httpRequest = HttpContext.Current.Request;
-                var postedImage = httpRequest.Files["COUNTRY_IMG"];
+                var postedImage = httpRequest.Files["COUNTRY_IMG_PATH"];
+
                 if (postedImage != null)
                 {
-                    // Generate a unique image name
-                    imageName = new String(Path.GetFileNameWithoutExtension(postedImage.FileName).Take(10).ToArray()).Replace(" ", "-");
+                    string imageName = new string(Path.GetFileNameWithoutExtension(postedImage.FileName).Take(10).ToArray()).Replace(" ", "-");
                     imageName = imageName + DateTime.Now.ToString("yymmssfff") + Path.GetExtension(postedImage.FileName);
 
-                    // Save the image to the server
                     var filePath = HttpContext.Current.Server.MapPath("~/img/" + imageName);
                     postedImage.SaveAs(filePath);
 
-                    // Save the URL path in the database
                     country.COUNTRY_IMG_Path = "/img/" + imageName;
                 }
 
-                int i = objball.insertCountryRecord(country);
-                if (i > 0)
-                {
-                    result = "File uploaded successfully";
-                }
-                else
-                {
-                    result = "File upload failed";
-                }
+                int resultCode = objball.insertCountryRecord(country);
+                result = resultCode > 0 ? "File uploaded successfully" : "File upload failed";
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                return InternalServerError(ex);
             }
+
             return Ok(result);
         }
 

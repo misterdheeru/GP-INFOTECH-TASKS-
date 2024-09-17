@@ -23,7 +23,7 @@ namespace gp_studentscrudFileUpload
             // Configure the default API route
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "api/{controller}/{Action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }

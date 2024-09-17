@@ -7,6 +7,8 @@ import { DataBindingModule } from './data-binding/data-binding.module';
 import { AuthModule } from './auth/auth.module';
 import { RouterLink } from '@angular/router';
 import { provideHttpClient, withFetch } from '@angular/common/http';
+import { FormModule } from './form/form.module';
+import { StudentsCrudModule } from './students-crud/students-crud.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
     WebpageModule,
     DataBindingModule,
     AuthModule,
-    RouterLink
+    RouterLink,
+    FormModule,
+    StudentsCrudModule
 ],
   providers: [
     provideClientHydration(),

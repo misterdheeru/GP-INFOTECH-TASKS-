@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="container">
+      <form [formGroup]="CountryForm">
+        <dd>ID</dd>
+        <dd>
+          <input type="text" formControlName="COUNTRY_ID">
+        </dd>
+        <dd>NAME</dd>
+        <dd>
+          <input type="text" formControlName="COUNTRY_NAME">
+        </dd>
+        <dd>IMG</dd>
+        <dd>
+          <!-- Use (change) event to detect file selection -->
+          <input type="file" id="myFile" (change)="onFileSelected($event)">
+        </dd>
+        <dd>
+          <br><br>
+          <button type="button" (click)="submitdetails(CountryForm)">submit</button>
+        </dd>
+      </form>
+    </div>
+  </div>
+  

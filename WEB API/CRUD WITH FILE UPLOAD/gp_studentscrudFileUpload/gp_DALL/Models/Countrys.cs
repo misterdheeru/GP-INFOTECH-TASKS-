@@ -15,7 +15,6 @@ namespace gp_DALL.Models
         public string CREATED_ON { set; get; }
         public string UPDATED_BY { set; get; }
         public string UPDATED_ON { set; get; }
-        public byte[] COUNTRY_IMG { set; get; }
         public string COUNTRY_IMG_Path { get; set; }
 
 

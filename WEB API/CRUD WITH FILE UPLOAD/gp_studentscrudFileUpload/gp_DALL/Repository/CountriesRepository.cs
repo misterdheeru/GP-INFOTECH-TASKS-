@@ -30,7 +30,6 @@ namespace gp_DALL.Repository
                     CREATED_ON = dr["CREATED_ON"].ToString(),
                     UPDATED_BY = dr["UPDATED_BY"].ToString(),
                     UPDATED_ON = dr["UPDATED_ON"].ToString(),
-                    COUNTRY_IMG = dr["COUNTRY_IMG"] as byte[],
                     COUNTRY_IMG_Path = dr["COUNTRY_IMG_Path"].ToString(),
                 };
 
@@ -55,7 +54,6 @@ namespace gp_DALL.Repository
             cmd.Parameters.AddWithValue("@CREATEDBY", obj.CREATED_BY);
             cmd.Parameters.AddWithValue("@CREATEDON", Date.ToString("MM/dd/yyyy"));
             cmd.Parameters.AddWithValue("@UPDATEDBY", obj.UPDATED_BY);
-            cmd.Parameters.AddWithValue("@COUNTRY_IMG", obj.COUNTRY_IMG);
             cmd.Parameters.AddWithValue("@COUNTRY_IMG_Path", obj.COUNTRY_IMG_Path);
 
             int i = cmd.ExecuteNonQuery();
@@ -120,7 +118,6 @@ namespace gp_DALL.Repository
                     CREATED_ON = dr["CREATED_ON"].ToString(),
                     UPDATED_BY = dr["UPDATED_BY"].ToString(),
                     UPDATED_ON = dr["UPDATED_ON"].ToString(),
-                    COUNTRY_IMG = dr["COUNTRY_IMG"] as byte[],
                     COUNTRY_IMG_Path = dr["COUNTRY_IMG_Path"].ToString(),
                 };
 
