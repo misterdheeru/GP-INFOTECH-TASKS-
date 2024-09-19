@@ -1,0 +1,18 @@
+ <style>
+    .navbarcontentdata{
+        height: 100vh;
+    }
+ </style>
+
+ <ng-container *ngIf="ShowHeaderAndFooter">
+  <app-header></app-header>
+ </ng-container>
+
+ <div class="navbarcontentdata">
+    <router-outlet></router-outlet>
+ </div>
+
+<ng-container *ngIf="ShowHeaderAndFooter">
+    <app-footer></app-footer>
+</ng-container>
+ 

@@ -1,0 +1,97 @@
+<style>
+    .heightsize{
+      height: 30px;
+    }
+  </style>
+  <div class="container-fluid">
+    <div class="container">
+      <form [formGroup]="myForm" >
+       <div class="row">
+        <div class="col-2">
+          <label>First Name</label>
+          <br>
+          <input type="text" formControlName="Fname">
+          <span *ngIf="myForm.get('Fname')?.touched && myForm.get('Fname')?.hasError('minlength')" style="color: rgb(255, 0, 0); font-weight: bold; font-family: Arial, Helvetica, sans-serif;" >minum 8 digits</span>
+          <span *ngIf="myForm.get('Fname')?.touched && myForm.get('Fname')?.hasError('required')" style="color: red; font-weight: bold; font-family: Arial, Helvetica, sans-serif;" >Please Enter First Name</span>
+           <br>
+          <label>Age</label>
+          <br>
+          <input type="number" formControlName="Age">
+          <span *ngIf="myForm.get('Age')?.touched && myForm.get('Age')?.hasError('required')" style="color: red; font-weight: bold; font-family: Arial, Helvetica, sans-serif;" >Please Enter Age</span>
+          <br>
+          <label>Email</label>
+          <br>
+          <input type="email" class="w-100"  formControlName="Email">
+          <span *ngIf="myForm.get('Email')?.touched && myForm.get('Email')?.hasError('required')" style="color: red; font-weight: bold; font-family: Arial, Helvetica, sans-serif;" >Please Enter Email</span>
+        </div>
+        <div class="col-2">
+          <label>Last Name</label>
+          <br>
+          <input type="text" formControlName="Lname">
+          <span *ngIf="myForm.get('Lname')?.touched && myForm.get('Lname')?.hasError('required')" style="color: red; font-weight: bold; font-family: Arial, Helvetica, sans-serif;" >Please Enter Last Name</span>
+          <label>Date Of Birth</label>
+          <br>
+          <input type="date" class="w-100"  formControlName="Date">
+          <span *ngIf="myForm.get('Date')?.touched && myForm.get('Date')?.hasError('required')" style="color: red; font-weight: bold; font-family: Arial, Helvetica, sans-serif;" >Please Select DOB</span>
+          <label>Mobile</label>
+          <br>
+          <input type="text" formControlName="Mobile" >
+          <span *ngIf="myForm.get('Mobile')?.touched && myForm.get('Mobile')?.hasError('required')" style="color: red; font-weight: bold; font-family: Arial, Helvetica, sans-serif;" >Please Enter Mobile </span>
+        </div>
+  
+       </div>
+       <div class="row">
+        <div class="col-4">
+          <label>Country</label>
+          <br>
+           <select class="w-100 heightsize" formControlName="Country">
+            <option>-select-</option>
+            <option>india</option>
+            <option>usa</option>
+           </select>
+           <span *ngIf="myForm.get('Country')?.touched && myForm.get('Country')?.hasError('required')" style="color: red; font-weight: bold; font-family: Arial, Helvetica, sans-serif;" >Please Select Country </span>
+        </div>
+  
+      </div>
+       <div class="row">
+        <div class="col-4">
+          <label>Address</label>
+          <br>
+          <input type="text" class="w-100" formControlName="Address">
+          <span *ngIf="myForm.get('Address')?.touched && myForm.get('Address')?.hasError('required')" style="color: red; font-weight: bold; font-family: Arial, Helvetica, sans-serif;" >Please Enter Address </span>
+        </div>
+  
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <label>Land Mark</label>
+          <br>
+          <input type="text" class="w-100" formControlName="Landmark">
+          <span *ngIf="myForm.get('Landmark')?.touched && myForm.get('Landmark')?.hasError('required')" style="color: red; font-weight: bold; font-family: Arial, Helvetica, sans-serif;" >Please Enter Landmark</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <label>Pin</label>
+          <br>
+          <input type="text" class="w-100" formControlName="Pin">
+          <span *ngIf="myForm.get('Pin')?.touched && myForm.get('Pin')?.hasError('required')" style="color: red; font-weight: bold; font-family: Arial, Helvetica, sans-serif;" >Please Enter Pin</span>
+        </div>
+      </div>
+      <br>
+  
+      <div class="row">
+        <div class="col-4">
+          <button class="btn btn-danger w-100" (click)="FormSubmitWithData(myForm)">submit</button>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="container-fluid">
+    <div class="container">
+  
+    </div>
+  </div>
