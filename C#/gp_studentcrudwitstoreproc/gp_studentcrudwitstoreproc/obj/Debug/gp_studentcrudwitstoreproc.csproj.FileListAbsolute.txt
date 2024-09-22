@@ -1,7 +1,0 @@
-D:\PROGRAMMING\GP INFOTECH\C#\gp_studentcrudwitstoreproc\gp_studentcrudwitstoreproc\bin\Debug\gp_studentcrudwitstoreproc.exe.config
-D:\PROGRAMMING\GP INFOTECH\C#\gp_studentcrudwitstoreproc\gp_studentcrudwitstoreproc\bin\Debug\gp_studentcrudwitstoreproc.exe
-D:\PROGRAMMING\GP INFOTECH\C#\gp_studentcrudwitstoreproc\gp_studentcrudwitstoreproc\bin\Debug\gp_studentcrudwitstoreproc.pdb
-D:\PROGRAMMING\GP INFOTECH\C#\gp_studentcrudwitstoreproc\gp_studentcrudwitstoreproc\obj\Debug\gp_studentcrudwitstoreproc.csproj.AssemblyReference.cache
-D:\PROGRAMMING\GP INFOTECH\C#\gp_studentcrudwitstoreproc\gp_studentcrudwitstoreproc\obj\Debug\gp_studentcrudwitstoreproc.csproj.CoreCompileInputs.cache
-D:\PROGRAMMING\GP INFOTECH\C#\gp_studentcrudwitstoreproc\gp_studentcrudwitstoreproc\obj\Debug\gp_studentcrudwitstoreproc.exe
-D:\PROGRAMMING\GP INFOTECH\C#\gp_studentcrudwitstoreproc\gp_studentcrudwitstoreproc\obj\Debug\gp_studentcrudwitstoreproc.pdb

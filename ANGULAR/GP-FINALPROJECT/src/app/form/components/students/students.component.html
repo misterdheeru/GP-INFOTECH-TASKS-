@@ -1,0 +1,128 @@
+<Style>
+    h1{
+        text-align: center;
+
+        color: white;
+    }
+    select{
+        padding: 10px;
+    }
+     .content-form{
+        padding: 20px;
+      /* From https://css.glass */
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.5px);
+-webkit-backdrop-filter: blur(9.5px);
+border: 1px solid rgba(255, 255, 255, 0.37);
+     }
+</Style>
+
+<div class="container-fluid">
+    <div class="container">
+        <br>
+        <br>
+        <ng-template #content let-offcanvas>
+            <div class="offcanvas-header">
+                <h4 class="offcanvas-title">Insert Students Record</h4>
+                <button type="button" class="btn-close" aria-label="Close" (click)="close()"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container-fluid">
+                    <div class="container">
+                        <form >
+                         <div class="content-form">
+                            <div class="row">
+                                <div class="col-3">
+                                    
+                         
+                                    <dd>
+                                        First Name
+                                    </dd>
+                                    <dd>
+                                        <input type="text"  class="w-75" formControlName="FNAME"/>
+                                    </dd>
+                                    
+                                    <dd>
+                                        Email
+                                    </dd>
+                                    <dd>
+                                        <input type="email"  class="w-75" formControlName="EMAIL"/>
+                                    </dd>
+                           
+                                </div>
+                                <div class="col-3">
+                                     
+                                    <dd>SurName</dd>
+                                    <dd>
+                                      <input type="text"  class="w-75" formControlName="SNAME"/>
+                                    </dd>
+                                    <dd>Country</dd>
+                                    <dd>
+                  
+                                    <select class="w-75 p-1" #txtval  >
+                                      <option  >-select-</option>
+                                    <ng-container >
+                                      <option  ></option>
+                                    </ng-container>
+                                     </select>
+                                    </dd>
+                                </div>
+                                <div class="col-3">
+                                    <dd>Age</dd>
+                                    <dd>
+                                      <input type="text" class="w-75" formControlName="AGE" />
+                                    </dd>
+                                    <dd>State</dd>
+                                    <dd>
+                                       <select class="w-75 p-1"  #txtval1    formControlName="STATE_ID">
+                                        <option  >-select-</option>
+                                        <ng-container >
+                                          <option  > </option>
+                                        </ng-container>
+                  
+                                       </select>
+                                    </dd>
+                                 
+       
+                                </div>
+                                <div class="col-3">
+                                    <dd>mobile</dd>
+                                    <dd>
+                                      <input type="text" class="w-75" formControlName="MOBILE"/>
+                                    </dd>
+                                    <dd>City</dd>
+                                    <dd>
+                                       <select class="w-75  p-1"   formControlName="CITI_ID">
+                                        <option>-select-</option>
+                                        <ng-container>
+                                          <option ></option>
+                                        </ng-container>
+                                       </select>
+                                    </dd>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                         <br>
+                                          <button class="btn btn-danger  submitbtn  w-100"     >Submit Record</button>
+                                          <button class="btn btn-success submitbtn w-100 "  [hidden]="updateShow"  >Update Record</button>
+                                        </div>
+                                </div>
+                                
+                            </div>
+                         </div>
+            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    
+        <button class="btn btn-lg btn-outline-primary mb-2 me-2" (click)="openBottom(content)">Bottom position</button>
+
+    </div>
+</div>
+
+ 

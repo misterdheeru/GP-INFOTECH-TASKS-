@@ -1,7 +1,0 @@
-D:\PROGRAMMING\GP INFOTECH\C#\gp.consoleapp\gp.consoleapp\obj\Debug\gp.consoleapp.csproj.AssemblyReference.cache
-D:\PROGRAMMING\GP INFOTECH\C#\gp.consoleapp\gp.consoleapp\obj\Debug\gp.consoleapp.csproj.CoreCompileInputs.cache
-D:\PROGRAMMING\GP INFOTECH\C#\gp.consoleapp\gp.consoleapp\bin\Debug\gp.consoleapp.exe.config
-D:\PROGRAMMING\GP INFOTECH\C#\gp.consoleapp\gp.consoleapp\bin\Debug\gp.consoleapp.exe
-D:\PROGRAMMING\GP INFOTECH\C#\gp.consoleapp\gp.consoleapp\bin\Debug\gp.consoleapp.pdb
-D:\PROGRAMMING\GP INFOTECH\C#\gp.consoleapp\gp.consoleapp\obj\Debug\gp.consoleapp.exe
-D:\PROGRAMMING\GP INFOTECH\C#\gp.consoleapp\gp.consoleapp\obj\Debug\gp.consoleapp.pdb

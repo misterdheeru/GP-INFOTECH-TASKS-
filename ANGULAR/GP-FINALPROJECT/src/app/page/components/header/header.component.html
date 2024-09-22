@@ -1,0 +1,162 @@
+<style>
+  .container-fluid{
+     background-color: rgb(100, 94, 94);
+     width: 100%;
+     box-shadow: -33px -6px 32px 8px rgb(61, 59, 59);
+  }
+  .content-nave{
+      display: flex;
+      top: 0px;
+
+  }
+  .col-3,.navtitle{
+     background-color: yellow;
+     border-top-right-radius: 500px;
+
+  }
+  img{
+     width: 82%;
+     padding: 10px;
+  }
+  .navbar-selector{
+ 
+   background-color: aquamarine;
+  }
+  .offcanvas, .offcanvas-end{
+
+background-color: rgb(0, 0, 0);
+color: white;
+}
+.btn-close {
+background-color: yellow;
+color: yellow;
+}
+.container-content{
+background-color: yellow;
+color: rgb(0, 0, 0);
+margin-top: 43px;
+border-top-left-radius: 310px;
+padding: 16px;
+box-shadow: 2px 2px 2px 2px black;
+text-align: center;
+box-shadow: 2px 2px 2px 4px rgb(255 0 0);
+border-bottom-right-radius: 380px;
+}
+a{
+text-decoration: none;
+color: #000000;
+
+padding: 18px;
+margin-left: -16px;
+}
+.nav-content{
+margin-top: 19%;
+}
+.container-content:hover{
+background-color: rgb(141, 141, 0);
+
+}
+
+.offcanvas-body{
+padding: 0px;
+}
+img{
+width: 83%;
+display: flex;
+padding: 28px;
+border-radius: 45px;
+margin-left: 8%;
+}
+
+.offcanvas-header{
+background-color: rgba(255, 255, 255, 0.893);
+padding: -1px;
+height: 10%;
+}
+h1{
+   color: blue;
+}
+.navbar-toggler{
+   padding: 9px;
+    background-color: #e9ff08;
+    border-radius: 13px;
+    box-shadow: 2px -1px 15px 7px #343433;
+}
+.navbar-toggler-icon{
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+ </style>
+
+ <div class="container-fluid">
+  <div class="row">
+     <div class="col-3 navtitle">
+      <h1>Student Crud</h1>
+     </div>
+     <div class="col-9 bg ">
+       <div class="float-end m-4  ">
+         
+         <button class="navbar-toggler collapsed"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+       </div>
+   </div>
+  </div>
+ 
+ 
+
+ 
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+ <div class="offcanvas-header">
+    <h1>STUDENT CRUD</h1>
+   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+ </div>
+ <div class="offcanvas-body">
+  <div class="nav-content">
+   <a  routerLink="/app-students" data-bs-dismiss="offcanvas"> 
+     
+   <div class="container-content">
+   
+
+     <h5>Students</h5>
+  
+     
+       
+    </div>
+   </a>
+   <a  routerLink="/app-country" data-bs-dismiss="offcanvas"> 
+     
+      <div class="container-content">
+      
+   
+        <h5>Country</h5>
+     
+        
+          
+       </div>
+      </a>
+      <a  routerLink="/app-states" data-bs-dismiss="offcanvas"> 
+     
+         <div class="container-content">
+         
+      
+           <h5>States</h5>
+        
+           
+             
+          </div>
+         </a>
+         <a  routerLink="/app-city" data-bs-dismiss="offcanvas"> 
+     
+            <div class="container-content">
+            
+         
+              <h5>City</h5>
+           
+              
+                
+             </div>
+            </a>
+  </div>
+ </div>
+</div>

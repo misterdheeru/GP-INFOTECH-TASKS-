@@ -1,0 +1,16 @@
+import { Component } from '@angular/core';
+import { NavigationEnd, Route, Router } from '@angular/router';
+
+@Component({
+  selector: 'app-page',
+  templateUrl: './page.component.html',
+  styleUrl: './page.component.css'
+})
+export class PageComponent {
+
+  
+
+
+
+
+}

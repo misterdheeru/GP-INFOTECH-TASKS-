@@ -1,0 +1,14 @@
+ 
+
+### Explanation of `::ng-deep`
+
+`::ng-deep` is a deprecated CSS selector in Angular used to apply styles to child components. Normally, Angular’s view encapsulation restricts styles to the component they are defined in. However, `::ng-deep` allows styles to penetrate this boundary and affect nested child components.
+
+#### Key Points:
+- **Purpose:** To apply styles to elements inside child components.
+- **Behavior:** Without `::ng-deep`, styles are scoped to a single component. With `::ng-deep`, styles can "reach" into child components.
+- **Deprecation:** `::ng-deep` is deprecated and should be avoided for future-proofing. Consider alternatives like shared styles or CSS inheritance.
+
+---
+
+You can use this as a commit note or documentation in your project.

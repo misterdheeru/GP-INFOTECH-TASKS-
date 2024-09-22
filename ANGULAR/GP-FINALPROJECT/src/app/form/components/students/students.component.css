@@ -1,0 +1,45 @@
+/* Target only the specific offcanvas with the custom class */
+::ng-deep .custom-offcanvas {
+    background-color: #000000 !important;  
+    color: white !important;  
+    height: 350px !important;
+}
+::ng-deep .btn-close ,.custom-offcanvas ,.text-reset{
+
+    background-color: rgb(255, 242, 0) !important;
+}
+ 
+::ng-deep.offcanvas-header, .custom-offcanvas {
+    background-color: rgb(255, 221, 0) !important;
+    color: black !important;
+}
+
+
+.mat-form-field {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.mat-select {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.mat-select-trigger {
+    font-weight: bold;
+}
+
+.mat-option {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.mat-option:hover {
+    background-color: #e0e0e0;
+}
+
+button.btn {
+    margin-top: 20px;
+}
+
+

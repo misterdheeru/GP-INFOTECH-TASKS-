@@ -1,0 +1,24 @@
+<style>
+  .contentPages{
+    height: 100vh;
+  }
+ 
+</style>
+<ng-container *ngIf="ShowHeaderAndFooter">
+  <app-header></app-header>
+</ng-container>
+
+ <ng-container>
+  <div class="container-fluid ">
+    <div class="contentPages">
+      <router-outlet></router-outlet>
+    </div>   
+  </div>
+ </ng-container>
+
+
+ <ng-container *ngIf="ShowHeaderAndFooter">
+ <div class="footerclass">
+  <app-footer></app-footer>
+ </div>
+</ng-container>
